@@ -20,12 +20,13 @@ html {
 }
 header {
   top: 0;
-  position: sticky;
+  position: fixed;
+  z-index: 1;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba($color: $pozadie1, $alpha: 0.65);
+  background-color: rgba($color: $pozadie1, $alpha: 0.7);
   nav {
     width: $sirka;
     display: flex;
@@ -64,6 +65,27 @@ header {
           color: $text_farebny;
         }
       }
+    }
+  }
+}
+#uvod {
+  width: 100vw;
+  background-color: black;
+  .uvod_content {
+    width: $sirka;
+    height: 700px;
+    position: relative;
+    overflow-y: hidden;
+    margin: 0 auto;
+    img {
+      width: $sirka;
+    }
+    .moto {
+      box-shadow: 10px 0px 50px 60px black inset;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
     }
   }
 }
