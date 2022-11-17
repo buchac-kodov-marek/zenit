@@ -12,6 +12,7 @@ $biela: #ffffff;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   margin: 0;
+  box-sizing: border-box;
 }
 html {
   width: 100vw;
@@ -24,20 +25,45 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba($color: $pozadie1, $alpha: 0.65);
   nav {
     width: $sirka;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 65px;
     .identita {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
+      gap: 4px;
+      text-decoration: none;
+      img {
+        height: 45px;
+      }
+      h1 {
+        color: $text_svetly;
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 3px;
+      }
     }
     ul {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 10px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $text_svetly;
+          font-weight: 400;
+        }
+        a:hover {
+          color: $text_farebny;
+        }
+      }
     }
   }
 }

@@ -3,6 +3,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 900;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -18,20 +19,45 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(70, 70, 70, 0.65);
 }
 header nav {
   width: 1110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 65px;
 }
 header nav .identita {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  gap: 4px;
+  text-decoration: none;
+}
+header nav .identita img {
+  height: 45px;
+}
+header nav .identita h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 3px;
 }
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+header nav ul li a:hover {
+  color: #ff8013;
 }/*# sourceMappingURL=style.css.map */
