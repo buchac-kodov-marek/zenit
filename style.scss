@@ -9,7 +9,35 @@ $biela: #ffffff;
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
-  background-color: red;
   font-family: "Lato", sans-serif;
   font-weight: 900;
+  margin: 0;
+}
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+header {
+  top: 0;
+  position: sticky;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  nav {
+    width: $sirka;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .identita {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
