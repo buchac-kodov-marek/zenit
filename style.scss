@@ -162,3 +162,60 @@ header {
     }
   }
 }
+#novinky {
+  width: 100vw;
+  position: relative;
+  img {
+    width: 100vw;
+    height: 310px;
+  }
+  .novinky {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .novinky_content {
+      width: $sirka;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      height: 310px;
+      gap: 10px;
+      h3 {
+        font-size: 22px;
+      }
+      h2 {
+        color: $text_farebny;
+        font-size: 33px;
+        font-weight: 700;
+      }
+      h2::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 90px;
+        background-color: $text_farebny;
+        margin-top: 10px;
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      p {
+        font-weight: 600;
+        width: 45%;
+      }
+      img {
+        top: -50px;
+        position: absolute;
+        left: 950px;
+
+        width: 250px;
+        height: auto;
+      }
+    }
+  }
+}

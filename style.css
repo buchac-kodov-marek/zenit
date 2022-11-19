@@ -155,4 +155,61 @@ header nav ul li a:hover {
   position: absolute;
   margin-left: -28px;
   margin-top: -20px;
+}
+
+#novinky {
+  width: 100vw;
+  position: relative;
+}
+#novinky img {
+  width: 100vw;
+  height: 310px;
+}
+#novinky .novinky {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#novinky .novinky .novinky_content {
+  width: 1110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 310px;
+  gap: 10px;
+}
+#novinky .novinky .novinky_content h3 {
+  font-size: 22px;
+}
+#novinky .novinky .novinky_content h2 {
+  color: #ff8013;
+  font-size: 33px;
+  font-weight: 700;
+}
+#novinky .novinky .novinky_content h2::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 90px;
+  background-color: #ff8013;
+  margin-top: 10px;
+}
+#novinky .novinky .novinky_content h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+#novinky .novinky .novinky_content p {
+  font-weight: 600;
+  width: 45%;
+}
+#novinky .novinky .novinky_content img {
+  top: -50px;
+  position: absolute;
+  left: 950px;
+  width: 250px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
